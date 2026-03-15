@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>B2B RFP Listings — PSU/LSTK (India)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 2rem;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: #ffffff;
+        border-radius: 16px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        padding: 3rem;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #1a202c;
+        margin-bottom: 1rem;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #2d3748;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      h3 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #4a5568;
+        margin: 1.5rem 0 1rem 0;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #e2e8f0;
+      }
+
+      .header-intro {
+        font-size: 1rem;
+        color: #718096;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        background: #f7fafc;
+        border-left: 4px solid #667eea;
+        border-radius: 4px;
+      }
+
+      .rfp-card {
+        background: #ffffff;
+        border: 2px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+        transition: all 0.3s ease;
+      }
+
+      .rfp-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px rgba(102, 126, 234, 0.15);
+        border-color: #667eea;
+      }
+
+      .meta {
+        color: #4a5568;
+        margin: 0.5rem 0;
+        font-size: 0.95rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .meta::before {
+        content: "•";
+        color: #667eea;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 1rem 0;
+        background: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+
+      th {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #ffffff;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        letter-spacing: 0.5px;
+        padding: 1rem 0.8rem;
+        text-align: left;
+        border: none;
+      }
+
+      td {
+        border: 1px solid #e2e8f0;
+        padding: 0.9rem 0.8rem;
+        text-align: left;
+        color: #2d3748;
+        font-size: 0.9rem;
+      }
+
+      tbody tr {
+        transition: background-color 0.2s ease;
+      }
+
+      tbody tr:nth-child(even) {
+        background: #f7fafc;
+      }
+
+      tbody tr:hover {
+        background: #edf2f7;
+      }
+
+      .tests {
+        margin-top: 1.5rem;
+        padding: 1rem;
+        background: #f0f4ff;
+        border-radius: 8px;
+        border-left: 4px solid #667eea;
+      }
+
+      .tests::before {
+        content: "Required Tests: ";
+        font-weight: 600;
+        color: #4c51bf;
+      }
+
+      code {
+        background: #ffffff;
+        color: #5a67d8;
+        padding: 0.2rem 0.6rem;
+        border-radius: 6px;
+        font-size: 0.85rem;
+        font-family: "Courier New", monospace;
+        border: 1px solid #c3dafe;
+        font-weight: 500;
+      }
+
+      .origin {
+        font-size: 0.9rem;
+        color: #4a5568;
+        margin-bottom: 1rem;
+        padding: 0.75rem;
+        background: #f7fafc;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .origin::before {
+        content: "🔗";
+        font-size: 1.2rem;
+      }
+
+      .origin a {
+        color: #5a67d8;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s ease;
+      }
+
+      .origin a:hover {
+        color: #4c51bf;
+        text-decoration: underline;
+      }
+
+      .badge {
+        display: inline-block;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #ffffff;
+        padding: 0.4rem 1rem;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>B2B RFP Listings — Government/PSU and LSTK Projects</h1>
+      <p class="header-intro">
+        These tenders reflect typical Indian infrastructure projects (PSU/LSTK).
+        Each RFP includes scope of supply, technical specs, and acceptance
+        tests. Machine-readable JSON is embedded for agent ingestion.
+      </p>
+
+      <!-- RFP: PSU Rural Electrification (Low voltage) -->
+      <div class="rfp-card" id="RFP-PSU-RE-2025-001">
+        <h2>
+          RFP-PSU-RE-2025-001 — Rural Electrification LV Wiring
+          <span class="badge">PSU</span>
+        </h2>
+        <div class="origin">
+          Origin URL:
+          <a href="https://psu.energy.gov.in/tenders/re-lv-2025-001"
+            >https://psu.energy.gov.in/tenders/re-lv-2025-001</a
+          >
+        </div>
+        <div class="meta">Issuing Entity: State Energy PSU</div>
+        <div class="meta">Executor: LSTK (Public Sector)</div>
+        <div class="meta">Due Date: <span data-key="due_date"></span></div>
+        <h3>Scope of Supply</h3>
+        <table aria-label="RFP-PSU-RE-2025-001 Scope">
+          <thead>
+            <tr>
+              <th>Item ID</th>
+              <th>Description</th>
+              <th>Qty</th>
+              <th>conductor_size_mm2</th>
+              <th>voltage_kv</th>
+              <th>insulation_mm</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>4 mm2 copper cable, 1.1 kV rating, insulation >=0.8 mm</td>
+              <td>6000</td>
+              <td>4</td>
+              <td>1.1</td>
+              <td>0.8</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                10 mm2 aluminium cable, 1.1 kV rating, insulation >=1.0 mm
+              </td>
+              <td>2500</td>
+              <td>10</td>
+              <td>1.1</td>
+              <td>1.0</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="tests">
+          Tests: <code>insulation_test</code>, <code>dimensional_check</code>
+        </div>
+      </div>
+
+      <!-- RFP: Metro Feeder (Medium voltage) -->
+      <div class="rfp-card" id="RFP-METRO-PH2-2025-045">
+        <h2>
+          RFP-METRO-PH2-2025-045 — Metro Phase II Feeder Cables
+          <span class="badge">LSTK</span>
+        </h2>
+        <div class="origin">
+          Origin URL:
+          <a href="https://metro.gov.in/tenders/phase2-feeders-045"
+            >https://metro.gov.in/tenders/phase2-feeders-045</a
+          >
+        </div>
+        <div class="meta">Issuing Entity: Metro Rail Corporation</div>
+        <div class="meta">Executor: LSTK (Private)</div>
+        <div class="meta">Due Date: <span data-key="due_date"></span></div>
+        <h3>Scope of Supply</h3>
+        <table aria-label="RFP-METRO-PH2-2025-045 Scope">
+          <thead>
+            <tr>
+              <th>Item ID</th>
+              <th>Description</th>
+              <th>Qty</th>
+              <th>conductor_size_mm2</th>
+              <th>voltage_kv</th>
+              <th>insulation_mm</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>16 mm2 copper cable, 11 kV rating, insulation >=1.2 mm</td>
+              <td>300</td>
+              <td>16</td>
+              <td>11.0</td>
+              <td>1.2</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>25 mm2 copper cable, 11 kV rating, insulation >=1.6 mm</td>
+              <td>180</td>
+              <td>25</td>
+              <td>11.0</td>
+              <td>1.6</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="tests">
+          Tests: <code>high_voltage_test</code>, <code>insulation_test</code>
+        </div>
+      </div>
+
+      <!-- RFP: FMCG Plant Expansion (LV + specialty insulation) -->
+      <div class="rfp-card" id="RFP-FMCG-PLANT-2025-012">
+        <h2>
+          RFP-FMCG-PLANT-2025-012 — FMCG Plant LV Wiring (High-Insulation)
+          <span class="badge">Private</span>
+        </h2>
+        <div class="origin">
+          Origin URL:
+          <a href="https://fmcg.example.com/tenders/plant-lv-2025-012"
+            >https://fmcg.example.com/tenders/plant-lv-2025-012</a
+          >
+        </div>
+        <div class="meta">Issuing Entity: FMCG Manufacturing Co.</div>
+        <div class="meta">Executor: EPC Contractor</div>
+        <div class="meta">Due Date: <span data-key="due_date"></span></div>
+        <h3>Scope of Supply</h3>
+        <table aria-label="RFP-FMCG-PLANT-2025-012 Scope">
+          <thead>
+            <tr>
+              <th>Item ID</th>
+              <th>Description</th>
+              <th>Qty</th>
+              <th>conductor_size_mm2</th>
+              <th>voltage_kv</th>
+              <th>insulation_mm</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>4 mm2 copper cable, 1.1 kV rating, insulation >=1.4 mm</td>
+              <td>1200</td>
+              <td>4</td>
+              <td>1.1</td>
+              <td>1.4</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="tests">
+          Tests: <code>insulation_test</code>, <code>dimensional_check</code>
+        </div>
+      </div>
+    </div>
+
+    <!-- Machine-readable JSON payload for robust parsing -->
+    <script id="rfp-json" type="application/json">
+      {
+        "RFP-PSU-RE-2025-001": {
+          "title": "Rural Electrification LV Wiring (PSU)",
+          "due_date_offset_days": 20,
+          "scope": [
+            {
+              "item_id": 1,
+              "description": "4 mm2 copper cable, 1.1 kV rating, insulation >=0.8 mm",
+              "qty": 6000,
+              "specs": {
+                "conductor_size_mm2": 4,
+                "voltage_kv": 1.1,
+                "insulation_mm": 0.8
+              }
+            },
+            {
+              "item_id": 2,
+              "description": "10 mm2 aluminium cable, 1.1 kV rating, insulation >=1.0 mm",
+              "qty": 2500,
+              "specs": {
+                "conductor_size_mm2": 10,
+                "voltage_kv": 1.1,
+                "insulation_mm": 1.0
+              }
+            }
+          ],
+          "tests": ["insulation_test", "dimensional_check"],
+          "origin_url": "https://psu.energy.gov.in/tenders/re-lv-2025-001"
+        },
+        "RFP-METRO-PH2-2025-045": {
+          "title": "Metro Phase II Feeder Cables (11kV)",
+          "due_date_offset_days": 45,
+          "scope": [
+            {
+              "item_id": 1,
+              "description": "16 mm2 copper cable, 11 kV rating, insulation >=1.2 mm",
+              "qty": 300,
+              "specs": {
+                "conductor_size_mm2": 16,
+                "voltage_kv": 11.0,
+                "insulation_mm": 1.2
+              }
+            },
+            {
+              "item_id": 2,
+              "description": "25 mm2 copper cable, 11 kV rating, insulation >=1.6 mm",
+              "qty": 180,
+              "specs": {
+                "conductor_size_mm2": 25,
+                "voltage_kv": 11.0,
+                "insulation_mm": 1.6
+              }
+            }
+          ],
+          "tests": ["high_voltage_test", "insulation_test"],
+          "origin_url": "https://metro.gov.in/tenders/phase2-feeders-045"
+        },
+        "RFP-FMCG-PLANT-2025-012": {
+          "title": "FMCG Plant LV Wiring (High Insulation)",
+          "due_date_offset_days": 28,
+          "scope": [
+            {
+              "item_id": 1,
+              "description": "4 mm2 copper cable, 1.1 kV rating, insulation >=1.4 mm",
+              "qty": 1200,
+              "specs": {
+                "conductor_size_mm2": 4,
+                "voltage_kv": 1.1,
+                "insulation_mm": 1.4
+              }
+            }
+          ],
+          "tests": ["insulation_test", "dimensional_check"],
+          "origin_url": "https://fmcg.example.com/tenders/plant-lv-2025-012"
+        }
+      }
+    </script>
+
+    <!-- Script to populate due dates in the human-readable cards -->
+    <script>
+      function formatDate(d) {
+        const pad = (n) => String(n).padStart(2, "0");
+        return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(
+          d.getDate()
+        )}`;
+      }
+      try {
+        const raw = document.getElementById("rfp-json").textContent;
+        const data = JSON.parse(raw);
+        const today = new Date();
+        Object.keys(data).forEach((id) => {
+          const card = document.getElementById(id);
+          const span = card
+            ? card.querySelector('span[data-key="due_date"]')
+            : null;
+          const offset = data[id].due_date_offset_days || 0;
+          const due = new Date(today.getTime() + offset * 24 * 60 * 60 * 1000);
+          if (span) span.textContent = formatDate(due);
+        });
+      } catch (e) {
+        console.warn("Failed to populate due dates:", e);
+      }
+    </script>
+  </body>
+</html>

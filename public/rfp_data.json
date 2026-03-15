@@ -1,0 +1,85 @@
+{
+  "RFP-PSU-RE-2025-001": {
+    "title": "Rural Electrification LV Wiring (PSU)",
+    "due_date_offset_days": 20,
+    "scope": [
+      {
+        "item_id": 1,
+        "description": "4 mm2 copper cable, 1.1 kV rating, insulation >=0.8 mm",
+        "qty": 6000,
+        "specs": {
+          "conductor_size_mm2": 4,
+          "voltage_kv": 1.1,
+          "insulation_mm": 0.8
+        }
+      },
+      {
+        "item_id": 2,
+        "description": "10 mm2 aluminium cable, 1.1 kV rating, insulation >=1.0 mm",
+        "qty": 2500,
+        "specs": {
+          "conductor_size_mm2": 10,
+          "voltage_kv": 1.1,
+          "insulation_mm": 1.0
+        }
+      }
+    ],
+    "tests": ["insulation_test", "dimensional_check"],
+    "origin_url": "https://psu.energy.gov.in/tenders/re-lv-2025-001",
+    "issuing_entity": "State Energy PSU",
+    "executor": "LSTK (Public Sector)",
+    "type": "PSU"
+  },
+  "RFP-METRO-PH2-2025-045": {
+    "title": "Metro Phase II Feeder Cables (11kV)",
+    "due_date_offset_days": 45,
+    "scope": [
+      {
+        "item_id": 1,
+        "description": "16 mm2 copper cable, 11 kV rating, insulation >=1.2 mm",
+        "qty": 300,
+        "specs": {
+          "conductor_size_mm2": 16,
+          "voltage_kv": 11.0,
+          "insulation_mm": 1.2
+        }
+      },
+      {
+        "item_id": 2,
+        "description": "25 mm2 copper cable, 11 kV rating, insulation >=1.6 mm",
+        "qty": 180,
+        "specs": {
+          "conductor_size_mm2": 25,
+          "voltage_kv": 11.0,
+          "insulation_mm": 1.6
+        }
+      }
+    ],
+    "tests": ["high_voltage_test", "insulation_test"],
+    "origin_url": "https://metro.gov.in/tenders/phase2-feeders-045",
+    "issuing_entity": "Metro Rail Corporation",
+    "executor": "LSTK (Private)",
+    "type": "LSTK"
+  },
+  "RFP-FMCG-PLANT-2025-012": {
+    "title": "FMCG Plant LV Wiring (High Insulation)",
+    "due_date_offset_days": 28,
+    "scope": [
+      {
+        "item_id": 1,
+        "description": "4 mm2 copper cable, 1.1 kV rating, insulation >=1.4 mm",
+        "qty": 1200,
+        "specs": {
+          "conductor_size_mm2": 4,
+          "voltage_kv": 1.1,
+          "insulation_mm": 1.4
+        }
+      }
+    ],
+    "tests": ["insulation_test", "dimensional_check"],
+    "origin_url": "https://fmcg.example.com/tenders/plant-lv-2025-012",
+    "issuing_entity": "FMCG Manufacturing Co.",
+    "executor": "EPC Contractor",
+    "type": "Private"
+  }
+}
