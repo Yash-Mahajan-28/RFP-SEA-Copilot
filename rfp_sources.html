@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>B2B RFP Listings — PSU/LSTK (India)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; margin: 2rem; }
+    h1, h2 { margin: 0.2rem 0 0.6rem; }
+    .rfp-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    .meta { color: #555; margin: 0.4rem 0; }
+    table { border-collapse: collapse; width: 100%; margin: 0.5rem 0; }
+    th, td { border: 1px solid #ccc; padding: 0.4rem; text-align: left; }
+    .tests { margin-top: 0.5rem; }
+    code { background: #f7f7f7; padding: 0.1rem 0.3rem; border-radius: 4px; }
+    .origin { font-size: 0.9rem; color: #333; }
+    .badge { display:inline-block; background:#eef; color:#224; padding:2px 6px; border-radius:4px; margin-left:6px; font-size:0.85rem;}
+  </style>
+</head>
+<body>
+  <h1>B2B RFP Listings — Government/PSU and LSTK Projects</h1>
+  <p class="meta">These tenders reflect typical Indian infrastructure projects (PSU/LSTK). Each RFP includes scope of supply, technical specs, and acceptance tests. Machine-readable JSON is embedded for agent ingestion.</p>
+
+  <!-- RFP: PSU Rural Electrification (Low voltage) -->
+  <div class="rfp-card" id="RFP-PSU-RE-2025-001">
+    <h2>RFP-PSU-RE-2025-001 — Rural Electrification LV Wiring <span class="badge">PSU</span></h2>
+    <div class="origin">Origin URL: <a href="https://psu.energy.gov.in/tenders/re-lv-2025-001">https://psu.energy.gov.in/tenders/re-lv-2025-001</a></div>
+    <div class="meta">Issuing Entity: State Energy PSU</div>
+    <div class="meta">Executor: LSTK (Public Sector)</div>
+    <div class="meta">Due Date: <span data-key="due_date"></span></div>
+    <h3>Scope of Supply</h3>
+    <table aria-label="RFP-PSU-RE-2025-001 Scope">
+      <thead>
+        <tr>
+          <th>Item ID</th>
+          <th>Description</th>
+          <th>Qty</th>
+          <th>conductor_size_mm2</th>
+          <th>voltage_kv</th>
+          <th>insulation_mm</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>4 mm2 copper cable, 1.1 kV rating, insulation >=0.8 mm</td>
+          <td>6000</td>
+          <td>4</td>
+          <td>1.1</td>
+          <td>0.8</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>10 mm2 aluminium cable, 1.1 kV rating, insulation >=1.0 mm</td>
+          <td>2500</td>
+          <td>10</td>
+          <td>1.1</td>
+          <td>1.0</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="tests">Tests: <code>insulation_test</code>, <code>dimensional_check</code></div>
+  </div>
+
+  <!-- RFP: Metro Feeder (Medium voltage) -->
+  <div class="rfp-card" id="RFP-METRO-PH2-2025-045">
+    <h2>RFP-METRO-PH2-2025-045 — Metro Phase II Feeder Cables <span class="badge">LSTK</span></h2>
+    <div class="origin">Origin URL: <a href="https://metro.gov.in/tenders/phase2-feeders-045">https://metro.gov.in/tenders/phase2-feeders-045</a></div>
+    <div class="meta">Issuing Entity: Metro Rail Corporation</div>
+    <div class="meta">Executor: LSTK (Private)</div>
+    <div class="meta">Due Date: <span data-key="due_date"></span></div>
+    <h3>Scope of Supply</h3>
+    <table aria-label="RFP-METRO-PH2-2025-045 Scope">
+      <thead>
+        <tr>
+          <th>Item ID</th>
+          <th>Description</th>
+          <th>Qty</th>
+          <th>conductor_size_mm2</th>
+          <th>voltage_kv</th>
+          <th>insulation_mm</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>16 mm2 copper cable, 11 kV rating, insulation >=1.2 mm</td>
+          <td>300</td>
+          <td>16</td>
+          <td>11.0</td>
+          <td>1.2</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>25 mm2 copper cable, 11 kV rating, insulation >=1.6 mm</td>
+          <td>180</td>
+          <td>25</td>
+          <td>11.0</td>
+          <td>1.6</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="tests">Tests: <code>high_voltage_test</code>, <code>insulation_test</code></div>
+  </div>
+
+  <!-- RFP: FMCG Plant Expansion (LV + specialty insulation) -->
+  <div class="rfp-card" id="RFP-FMCG-PLANT-2025-012">
+    <h2>RFP-FMCG-PLANT-2025-012 — FMCG Plant LV Wiring (High-Insulation) <span class="badge">Private</span></h2>
+    <div class="origin">Origin URL: <a href="https://fmcg.example.com/tenders/plant-lv-2025-012">https://fmcg.example.com/tenders/plant-lv-2025-012</a></div>
+    <div class="meta">Issuing Entity: FMCG Manufacturing Co.</div>
+    <div class="meta">Executor: EPC Contractor</div>
+    <div class="meta">Due Date: <span data-key="due_date"></span></div>
+    <h3>Scope of Supply</h3>
+    <table aria-label="RFP-FMCG-PLANT-2025-012 Scope">
+      <thead>
+        <tr>
+          <th>Item ID</th>
+          <th>Description</th>
+          <th>Qty</th>
+          <th>conductor_size_mm2</th>
+          <th>voltage_kv</th>
+          <th>insulation_mm</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>4 mm2 copper cable, 1.1 kV rating, insulation >=1.4 mm</td>
+          <td>1200</td>
+          <td>4</td>
+          <td>1.1</td>
+          <td>1.4</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="tests">Tests: <code>insulation_test</code>, <code>dimensional_check</code></div>
+  </div>
+
+  <!-- Machine-readable JSON payload for robust parsing -->
+  <script id="rfp-json" type="application/json">
+  {
+    "RFP-PSU-RE-2025-001": {
+      "title": "Rural Electrification LV Wiring (PSU)",
+      "due_date_offset_days": 20,
+      "scope": [
+        { "item_id": 1, "description": "4 mm2 copper cable, 1.1 kV rating, insulation >=0.8 mm", "qty": 6000, "specs": { "conductor_size_mm2": 4, "voltage_kv": 1.1, "insulation_mm": 0.8 } },
+        { "item_id": 2, "description": "10 mm2 aluminium cable, 1.1 kV rating, insulation >=1.0 mm", "qty": 2500, "specs": { "conductor_size_mm2": 10, "voltage_kv": 1.1, "insulation_mm": 1.0 } }
+      ],
+      "tests": ["insulation_test", "dimensional_check"],
+      "origin_url": "https://psu.energy.gov.in/tenders/re-lv-2025-001"
+    },
+    "RFP-METRO-PH2-2025-045": {
+      "title": "Metro Phase II Feeder Cables (11kV)",
+      "due_date_offset_days": 45,
+      "scope": [
+        { "item_id": 1, "description": "16 mm2 copper cable, 11 kV rating, insulation >=1.2 mm", "qty": 300, "specs": { "conductor_size_mm2": 16, "voltage_kv": 11.0, "insulation_mm": 1.2 } },
+        { "item_id": 2, "description": "25 mm2 copper cable, 11 kV rating, insulation >=1.6 mm", "qty": 180, "specs": { "conductor_size_mm2": 25, "voltage_kv": 11.0, "insulation_mm": 1.6 } }
+      ],
+      "tests": ["high_voltage_test", "insulation_test"],
+      "origin_url": "https://metro.gov.in/tenders/phase2-feeders-045"
+    },
+    "RFP-FMCG-PLANT-2025-012": {
+      "title": "FMCG Plant LV Wiring (High Insulation)",
+      "due_date_offset_days": 28,
+      "scope": [
+        { "item_id": 1, "description": "4 mm2 copper cable, 1.1 kV rating, insulation >=1.4 mm", "qty": 1200, "specs": { "conductor_size_mm2": 4, "voltage_kv": 1.1, "insulation_mm": 1.4 } }
+      ],
+      "tests": ["insulation_test", "dimensional_check"],
+      "origin_url": "https://fmcg.example.com/tenders/plant-lv-2025-012"
+    }
+  }
+  </script>
+
+  <!-- Script to populate due dates in the human-readable cards -->
+  <script>
+    function formatDate(d) {
+      const pad = n => String(n).padStart(2, '0');
+      return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+    }
+    try {
+      const raw = document.getElementById('rfp-json').textContent;
+      const data = JSON.parse(raw);
+      const today = new Date();
+      Object.keys(data).forEach(id => {
+        const card = document.getElementById(id);
+        const span = card ? card.querySelector('span[data-key="due_date"]') : null;
+        const offset = (data[id].due_date_offset_days || 0);
+        const due = new Date(today.getTime() + offset * 24 * 60 * 60 * 1000);
+        if (span) span.textContent = formatDate(due);
+      });
+    } catch (e) {
+      console.warn('Failed to populate due dates:', e);
+    }
+  </script>
+</body>
+</html>
