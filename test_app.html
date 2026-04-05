@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form Eligibility</title>
+</head>
+<body>
+    <h2>User Eligibility Check</h2>
+    <p>Please enter your age. You must be between 18 and 65 years old to register.</p>
+    
+    <label for="ageInput">Age:</label>
+    <input type="text" id="ageInput" name="age">
+    <button id="submitBtn" onclick="checkEligibility()">Submit</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+        function checkEligibility() {
+            const ageStr = document.getElementById("ageInput").value;
+            const resultElement = document.getElementById("result");
+            
+            // White-box logic to test
+            if (ageStr === "" || isNaN(ageStr)) {
+                resultElement.innerText = "Error: Invalid Input";
+                return;
+            }
+
+            const age = parseInt(ageStr, 10);
+
+            if (age < 18) {
+                resultElement.innerText = "Ineligible: Too young";
+            } else if (age >= 18 && age <= 65) {
+                resultElement.innerText = "Eligible to Register";
+            } else {
+                resultElement.innerText = "Ineligible: Too old";
+            }
+        }
+    </script>
+</body>
+</html>
