@@ -25,7 +25,14 @@ jobs:
 
     - name: Build Next.js Application
       run: npm run build
-      
+      env:
+        GOOGLE_API_KEY: "dummy-key-for-build"  # Prevents build error from missing API key
+        MONGODB_URI: "mongodb://localhost:27017/test"  # Prevents build error from missing MongoDB URI
+        JWT_SECRET: "dummy-secret-for-build"  # Prevents build error from missing JWT secret
+        GEMINI_MODEL: "dummy-model-for-build"  # Prevents build error from missing Gemini model environment variable
+        GEMINI_TEMPERATURE: "0.7"  # Prevents build error from missing Gemini temperature environment variable
+
+        
     # If in the future you add Jest or other unit testing frameworks, 
     # you can uncomment the line below to run tests automatically:
     # - name: Run Tests
